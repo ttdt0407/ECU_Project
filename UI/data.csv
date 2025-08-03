@@ -1,0 +1,9 @@
+temp,512
+temperature, 123
+voltage,2370
+current,209
+torque,171
+rpm,516
+duty,60
+direction,1
+can,0x3F0 8 03 E0 2E 00 00 00 00 00
