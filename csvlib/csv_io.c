@@ -18,14 +18,6 @@
 #define SIZEOFBUFFER 100
 
 
-/***************************************************************************
- * @brief   Get integer value corresponding to the key from CSV file
- * @details This function opens the CSV file, searches for the specified key,
- *          and returns the corresponding integer value. Input validation is
- *          performed to ensure key validity.
- * @param   key     Key values such as duty, direction, or sensor data (temp, voltage, current, torque, rpm)
- * @return  int     Integer value corresponding to the key, or -1 if not found
- ***************************************************************************/
 int csv_getInt(const char* key)
 {
     // Input validation
@@ -62,27 +54,11 @@ int csv_getInt(const char* key)
 }
 
 
-/***************************************************************************
- * @brief   Write integer value to CSV file for the specified key
- * @details This function updates the value of an existing key in the CSV file.
- *          If the key doesn't exist, it will be added to the file.
- * @param   key     Key name to write the value to
- * @param   value   Integer value to be written for the corresponding key
- * @return  void
- ***************************************************************************/
 void csv_setInt(const char *key, int value)
 {
-    
+
 }   
 
-
-/***************************************************************************
- * @brief   Read string value from CSV file (mainly used for CAN frame data)
- * @details This function reads string values from CSV file, particularly designed
- *          for CAN frame data which contains hexadecimal values and spaces.
- * @param   key     Key name to read the string value from
- * @return  const char* Pointer to the string value, or NULL if not found
- ***************************************************************************/
 const char *csv_getString(const char *key)
 {
     // Input Validation
