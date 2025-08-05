@@ -1,0 +1,38 @@
+# Compiled executables
+*.exe
+*.out
+main
+main.exe
+
+# Object files
+*.o
+*.obj
+
+# Temporary files
+*.tmp
+*.temp
+tempCodeRunnerFile.c
+
+# IDE/Editor files
+.vscode/
+*.swp
+*.swo
+*~
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Build directories
+build/
+dist/
+
+# CSV data files (if you want to ignore data changes)
+# data.csv
+
+# Log files
+*.log
+
+# Backup files
+*.bak
+*.backup
