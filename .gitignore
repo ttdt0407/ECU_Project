@@ -27,9 +27,6 @@ Thumbs.db
 build/
 dist/
 
-# CSV data files (if you want to ignore data changes)
-# data.csv
-
 # Log files
 *.log
 
