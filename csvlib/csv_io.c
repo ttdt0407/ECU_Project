@@ -15,7 +15,7 @@
 #include <stdlib.h>
 #include <stdbool.h>
 
-#define CSV_FILE_PATH "../UI/data.csv"
+#define CSV_FILE_PATH "UI/data.csv"
 #define SIZEOFBUFFER 100
 
 int csv_getInt(const char* key)
@@ -31,7 +31,7 @@ int csv_getInt(const char* key)
     if (file == NULL)
     {
         printf("Can not open data.csv\n");
-        printf("Please check the path: %s", CSV_FILE_PATH);
+        printf("Please check the path: %s\n", CSV_FILE_PATH);
         return -1;
     }
 
@@ -83,7 +83,7 @@ void csv_setInt(const char *key, int value)
     bool key_found = false;
     for (size_t i = 0; i < line_count; i++)
     {
-        if (strncmp(line[i], key, key_len) == 0 && line[key_len] ==',')
+        if (strncmp(line[i], key, key_len) == 0 && line[i][key_len] ==',')
         {
             snprintf(line[i], SIZEOFBUFFER, "%s,%d\n", key, value);
             key_found = true;
@@ -128,7 +128,7 @@ const char *csv_getString(const char *key)
     if (file == NULL)
     {
         printf("Can not open data.csv\n");
-        printf("Please check the path: %s", CSV_FILE_PATH);
+        printf("Please check the path: %s\n", CSV_FILE_PATH);
         return NULL;
     }
 
