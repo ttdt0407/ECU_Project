@@ -64,6 +64,7 @@ Std_ReturnType Can_Receive(uint32_t* canId, uint8_t* data, uint8_t* dlc)
         data[i] = (uint8_t)strtoul(token, NULL, 16);
     }
 
+    // Delete if the data length code is less than 8 byte
     for (int i = *dlc; i < 8; i++)
     {
         data[i] = 0;

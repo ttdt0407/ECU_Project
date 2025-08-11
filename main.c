@@ -29,10 +29,9 @@ int main(void)
     uint8_t data[8];
     uint8_t dlc;
     Can_Receive(&canId, data, &dlc);
-
     printf("CAN ID: %d\n", canId);
     printf("CAN DLC: %d\n", dlc);
-
+    printf("CAN DATA: ");
     for (size_t i = 0; i < 8; i++)
     {
         printf("%d ", data[i]);
