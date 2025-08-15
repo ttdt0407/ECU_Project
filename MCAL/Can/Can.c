@@ -70,5 +70,5 @@ Std_ReturnType Can_Receive(uint32_t* canId, uint8_t* data, uint8_t* dlc)
         data[i] = 0;
     }
 
-        return CAN_OK;
+    return CAN_OK;
 }

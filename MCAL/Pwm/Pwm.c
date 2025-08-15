@@ -34,3 +34,11 @@ void Pwm_SetDutyCycle(uint8_t channelId, uint16_t duty)
     csv_setInt("duty", duty);
     printf("Set duty cycle to %d\n", duty);
 }
+uint8_t Pwm_GetDutyCycle(uint8_t channelId){
+    if (channelId != 0)
+    {
+        printf("Channel ID is invalid !");
+        return 0;
+    }
+    return csv_getInt("duty");
+}

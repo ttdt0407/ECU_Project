@@ -33,4 +33,12 @@ void Dio_Init(void);
  ***************************************************************************/
 void Dio_WriteChannel(uint8_t channelId, int level);
 
+/***************************************************************************
+ * @brief   Read channel (channel 0)
+ * @details 
+ * @param   direction
+ * @return  uint8_t
+ ***************************************************************************/
+uint8_t Dio_ReadChannel(uint8_t channelId);
+
 #endif

@@ -26,3 +26,20 @@ void Dio_WriteChannel(uint8_t channelId, int level)
     csv_setInt("direction", level);
     printf("Set direction to %d\n", level);
 }
+
+/***************************************************************************
+ * @brief   Read digital value from channel
+ * @details This function reads digital value (0 or 1) from channel 0
+ * @param   channelId - Channel identifier to read from
+ * @return  uint8_t - Digital value (0 or 1), returns 0 if invalid channel
+ ***************************************************************************/
+uint8_t Dio_ReadChannel(uint8_t channelId){
+
+    if (channelId != 0)
+    {
+        printf("Channel of direction is invalid !");
+        return 0;
+    }
+
+    return csv_getInt("direction");
+}

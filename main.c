@@ -7,6 +7,13 @@
 #include "MCAL/Adc/Adc.h"
 #include "MCAL/Can/Can.h"
 
+#include "IOHWAB/IoHwAb_Adc.h"
+#include "IOHWAB/IoHwAb_Dio.h"
+#include "IOHWAB/IoHwAb_Pwm.h"
+
+
+/******************______Application for period 1______***********************
+******************************************************************************
 int main(void)
 {
     printf("/==================Initialized MCAL driver==================/\n");
@@ -37,3 +44,7 @@ int main(void)
         printf("%d ", data[i]);
     }
 }
+*******************************************************************************
+*******************************************************************************/
+
+

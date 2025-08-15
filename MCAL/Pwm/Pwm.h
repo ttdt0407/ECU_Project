@@ -32,4 +32,11 @@ void Pwm_Init(void);
  ***************************************************************************/
 void Pwm_SetDutyCycle(uint8_t channelId, uint16_t duty);
 
+/***************************************************************************
+ * @brief   Get current duty cycle value
+ * @details This function reads the current duty cycle value from channel 0
+ * @param   channelId - Channel identifier to read from  
+ * @return  uint8_t - Current duty cycle value (0-100), returns 0 if invalid channel
+ ***************************************************************************/
+uint8_t Pwm_GetDutyCycle(uint8_t channelId);
 #endif
